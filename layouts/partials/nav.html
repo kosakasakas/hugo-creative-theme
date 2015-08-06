@@ -14,11 +14,14 @@
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <!--<li>
                     <a class="page-scroll" href="#about">{{ with .Site.Params.navigation.links.about }}{{ . }}{{ end }}</a>
+                </li>-->
+                <li>
+                    <a class="page-scroll" href="#vision">{{ with .Site.Params.navigation.links.vision }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">{{ with .Site.Params.navigation.links.services }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="#keywords">{{ with .Site.Params.navigation.links.keywords }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#portfolio">{{ with .Site.Params.navigation.links.portfolio }}{{ . }}{{ end }}</a>
