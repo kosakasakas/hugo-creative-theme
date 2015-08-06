@@ -1,23 +1,23 @@
-<section id="projects">
+<section class="bg-dark" id="news">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">{{ with .Site.Params.projects.headline }}{{ . }}{{ end }}</h2>
+                <h2 class="section-heading">{{ with .Site.Params.news.headline }}{{ . }}{{ end }}</h2>
                 <hr class="primary">
-                <p class="text-muted">{{ with .Site.Params.projects.description }}{{ . }}{{ end }}</p>
+                <p class="text-faded">{{ with .Site.Params.news.description }}{{ . }}{{ end }}</p>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row no-gutter">
-            {{ range .Site.Data.projects }}
+            {{ range .Site.Data.news }}
             <div class="col-lg-4 col-sm-6">
-                <a href="#projectsModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
-                    <img src="img/projects/{{ .img }}" class="img-responsive" alt="">
+                <a href="#newsModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                    <img src="img/news/{{ .img }}" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                {{ .keyword }}
+                                {{ .date }}
                             </div>
                             <div class="project-name">
                                 {{ .title }}
