@@ -1,10 +1,10 @@
-<section class="bg-dark" id="news">
+<section class="bg-gray" id="news">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">{{ with .Site.Params.news.headline }}{{ . }}{{ end }}</h2>
                 <hr class="primary">
-                <p class="text-faded">{{ with .Site.Params.news.description }}{{ . }}{{ end }}</p>
+                <p class="text-muted">{{ with .Site.Params.news.description }}{{ . }}{{ end }}</p>
             </div>
         </div>
     </div>
