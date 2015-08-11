@@ -1,0 +1,60 @@
+{{ "<!-- KEYWORDS -->" | safeHTML }}
+<section class="bg-primary" id="people">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.people.headline }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+                <p class="text-muted">{{ with .Site.Params.people.description }}{{ . }}{{ end }}</p>
+            </div>
+            <div class="col-lg-3 col-sm-3 text-center">
+                <h3 class="section-heading">{{ with .Site.Params.people.category1 }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.people.member }}
+            <div class="col-lg-3 col-sm-3">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <img src="img/people/{{ .img }}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>{{ .name }}</h4>
+                        <p class="text-faded small">{{ .description }}</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 text-center">
+                <br>
+                <h3 class="section-heading">{{ with .Site.Params.people.category2 }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.people.obog }}
+            <div class="col-lg-3 col-sm-3">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <img src="img/people/{{ .img }}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>{{ .name }}</h4>
+                        <p class="text-faded small">{{ .description }}</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        </div>
+    </div>
+</section>
