@@ -7,7 +7,7 @@
                 <hr class="light">
                 <p class="text-muted">{{ with .Site.Params.people.description }}{{ . }}{{ end }}</p>
             </div>
-            <div class="col-lg-3 col-xs-3 text-center">
+            <div class="col-lg-3 col-xs-4 text-center">
                 <h3 class="section-heading">{{ with .Site.Params.people.category1 }}{{ . }}{{ end }}</h2>
                 <hr class="light">
                 <br>
@@ -18,7 +18,7 @@
             <div class="col-lg-3 col-xs-3">
                 <div class="row">
                     <div class="col-lg-6 text-center">
-                        <img src="img/people/{{ .img }}" class="img-responsive" alt="">
+                        <img src="img/people/{{ .img }}" class="img-responsive wow bounceIn" alt="">
                     </div>
                     <div class="col-lg-6">
                         <h4>{{ .name }}</h4>
@@ -43,7 +43,7 @@
             <div class="col-lg-3 col-xs-3">
                 <div class="row">
                     <div class="col-lg-6 text-center">
-                        <img src="img/people/{{ .img }}" class="img-responsive" alt="">
+                        <img src="img/people/{{ .img }}" class="img-responsive wow bounceIn" alt="">
                     </div>
                     <div class="col-lg-6">
                         <h4>{{ .name }}</h4>
