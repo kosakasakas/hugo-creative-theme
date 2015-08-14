@@ -3,6 +3,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
 <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+<!--for Facebook-->
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta property="og:description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:image" content="../img/{{ .Site.Params.image }}" />
+<!--for Twitter-->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+<meta name="twitter:title" content="{{ .Site.Title }} - {{ .Site.Params.description }}"/>
+<meta name="twitter:domain" content="{{ .Site.Title }}"/>
+<meta name="twitter:image:src" content="../img/{{ .Site.Params.image }}"/>
+<!--thombnail-->
+<link rel="icon" href="../img/{{ .Site.Params.thumbnail }}" sizes="32x32" />
+<link rel="apple-touch-icon-precomposed" href="../img/{{ .Site.Params.thumbnail }}">
+<meta name="msapplication-TileImage" content="../img/{{ .Site.Params.thumbnail }}"/>
 {{ .Hugo.Generator }}
 <title>{{ .Site.Title }}</title>
 {{ "<!-- Bootstrap Core CSS -->" | safeHTML }}

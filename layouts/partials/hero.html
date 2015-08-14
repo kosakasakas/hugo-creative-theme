@@ -1,6 +1,8 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
-    <video src="../img/movie/opening.mp4" muted autoplay loop id="bgvid"></video>
+    <div class="video-pattern">
+        <video src="../img/movie/opening.mp4" muted autoplay loop id="bgvid"></video>
+    </div>
     <div class="header-content">
         <div class="header-content-inner">
             <h1>{{ with .Site.Params.hero.slogan }}{{ . }}{{ end }}</h1>
