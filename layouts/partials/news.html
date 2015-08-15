@@ -8,25 +8,26 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            {{ range .Site.Data.news }}
-            <div class="col-lg-4 col-xs-6">
-                <a href="#newsModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
-                    <img src="img/news/{{ .img }}" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                {{ .date }}
-                            </div>
-                            <div class="project-name">
-                                {{ .title }}
-                            </div>
-                        </div>
-                    </div>
-                </a>
+    <div class="slick-carousel">
+    {{ range .Site.Data.news }}
+        <div>
+            <a href="#newsModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
+            <div class="portfolio-frame">
+            <img src="img/news/{{ .img }}" class="img-responsive" alt="">
             </div>
-            {{ end }}
+            <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                        {{ .date }}
+                    </div>
+                    <div class="project-name">
+                        {{ .title }}
+                    </div>
+                </div>
+            </div>
+            </a>
         </div>
+    {{ end }}
     </div>
+</div>
 </section>
