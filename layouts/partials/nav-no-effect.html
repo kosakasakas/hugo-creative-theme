@@ -18,7 +18,7 @@
                     <a class="" href="#about">{{ with .Site.Params.navigation.links.about }}{{ . }}{{ end }}</a>
                 </li>-->
                 <li>
-                    <a class="" href="#vision">{{ with .Site.Params.navigation.links.vision }}{{ . }}{{ end }}</a>
+                    <a class="" href="{{ .Site.BaseURL }}#vision">{{ with .Site.Params.navigation.links.vision }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
                     <a class="" href="{{ .Site.BaseURL }}#keywords">{{ with .Site.Params.navigation.links.keywords }}{{ . }}{{ end }}</a>
