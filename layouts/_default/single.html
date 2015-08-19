@@ -4,20 +4,15 @@
 {{ partial "head.html" . }}
 </head>
     <body>
-   {{ partial "nav.html" . }}
-    <section class="aside">
+    <div class="article">
+       {{ partial "nav.html" . }}
+    <section>
     <div class="container">
         <!--<section id="wrapper">
             <article class="post">-->
-                <header>
-                    <h1 class="section-heading">{{ .Title }}</h1>
-                    <h2 class="headline">{{ .Date.Format "January 2, 2006" }}</h2>
-                </header>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="article">
                         {{ .Content }}
-                        </div>
                     </div>
                 </div>
             <!--</article>
@@ -44,6 +39,7 @@
 
         {{ partial "js.html" . }}
     </div>
-    </section>>
+    </section>
+    </div>
     </body>
 </html>
