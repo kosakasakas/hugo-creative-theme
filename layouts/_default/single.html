@@ -8,35 +8,14 @@
        {{ partial "nav-no-effect.html" . }}
     <section>
     <div class="container">
-        <!--<section id="wrapper">
-            <article class="post">-->
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        {{ .Content }}
-                    </div>
-                </div>
-            <!--</article>
-            <footer id="post-meta" class="clearfix">
-                {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
-                        <img class="avatar" src="{{ .Site.BaseURL }}images/avatar.png">
-                        <div>
-                            <span class="dark">{{ .Site.Params.name }}</span>
-                            <span>{{ .Site.Params.aboutAuthor }}</span>
-                        </div>
-                    {{ with .Site.Params.twitter }}</a>{{ end }}
-                <section id="sharing">
-                    {{ partial "share.html" . }}
-                </section>
-            </footer>
-
-            {{ if isset .Site.Params "disqusShortname" }}
-                {{ partial "disqus.html" . }}
-            {{ end }}
-
-            {{ partial "latest-posts.html" . }}
-            {{ partial "footer.html" . }}
-        </section>-->
-
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {{ .Content }}
+                <br>
+                <br>
+                <p style="text-align: center;"><a href="{{ .Site.BaseURL }}/#{{ .Section }}"><i class="fa fa-chevron-circle-left"> back</i></a>
+            </div>
+        </div>
         {{ partial "js.html" . }}
     </div>
     </section>
