@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">{{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}</a>
+            <a class="navbar-brand page-scroll" href="{{ .Site.BaseURL }}#page-top">{{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}</a>
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,25 +18,25 @@
                     <a class="page-scroll" href="#about">{{ with .Site.Params.navigation.links.about }}{{ . }}{{ end }}</a>
                 </li>-->
                 <li>
-                    <a class="page-scroll" href="#vision">{{ with .Site.Params.navigation.links.vision }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#vision">{{ with .Site.Params.navigation.links.vision }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#keywords">{{ with .Site.Params.navigation.links.keywords }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#keywords">{{ with .Site.Params.navigation.links.keywords }}{{ . }}{{ end }}</a>
                 </li>
                 <!--<li>
                     <a class="page-scroll" href="#portfolio">{{ with .Site.Params.navigation.links.portfolio }}{{ . }}{{ end }}</a>
                 </li>-->
                 <li>
-                    <a class="page-scroll" href="#news">{{ with .Site.Params.navigation.links.news }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#news">{{ with .Site.Params.navigation.links.news }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#projects">{{ with .Site.Params.navigation.links.projects }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#projects">{{ with .Site.Params.navigation.links.projects }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#people">{{ with .Site.Params.navigation.links.people }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#people">{{ with .Site.Params.navigation.links.people }}{{ . }}{{ end }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">{{ with .Site.Params.navigation.links.contact }}{{ . }}{{ end }}</a>
+                    <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.links.contact }}{{ . }}{{ end }}</a>
                 </li>
             </ul>
         </div>
