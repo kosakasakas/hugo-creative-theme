@@ -536,7 +536,7 @@ body {
     overflow: hidden;
 }
 
-.embedded-image-container iframe,img {
+.embedded-image-container iframe img {
     position: absolute;
     top: 0;
     left: 0;
