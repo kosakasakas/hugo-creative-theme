@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="slick-carousel">
-        {{ range where .Data.Pages "Section" "projects" }}
+        {{ range where .Data.Pages "Section" "jp-projects" }}
         <div class="col-lg-4 col-xs-6">
             <a href="{{ .Permalink }}" class="portfolio-box portfolio-link">
             <img src="../img/projects/{{ .Params.image }}" class="img-responsive" alt="">
