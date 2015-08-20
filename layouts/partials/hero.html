@@ -10,9 +10,9 @@
     <div class="header-content">
         <div class="header-content-inner">
             <h1>{{ with .Site.Params.hero.slogan }}{{ . }}{{ end }}</h1>
-            <hr>
             <p>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</p>
             <!--<a href="#vision" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>-->
+            <span class="blinking"><i class="fa fa-3x fa-arrow-circle-down"></i></span>
         </div>
     </div>
 </header>
