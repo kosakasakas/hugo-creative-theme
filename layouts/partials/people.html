@@ -16,7 +16,9 @@
             <div class="col-lg-3 col-xs-3">
                 <div class="row">
                     <div class="col-lg-6 text-center">
+                        {{ if isset . "url" }}<a href="{{ .url }}" target="_blank">{{ end }}
                         <img src="img/people/{{ .img }}" class="img-responsive wow bounceIn" alt="">
+                        {{ if isset . "url" }}</a>{{ end }}
                     </div>
                     <div class="col-lg-6">
                         <h4>{{ .name }}</h4>
