@@ -52,7 +52,7 @@ h4,
 h5,
 h6,
 p {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN', 'メイリオ',Meiryo,sans-serif;
     font-weight: 100;
 }
 
