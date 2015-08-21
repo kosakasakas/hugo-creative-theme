@@ -2,13 +2,15 @@
 <section class="bg-primary">
     <div class="container" id="vision" >
         <div class="row">
-            <div class="col-lg-10 col-md-8  col-xs-12 col-md-offset-2 col-lg-offset-1">
+            <div class="col-lg-10 col-md-10  col-xs-12 col-md-offset-1 col-lg-offset-1">
                 <h2 class="section-heading">{{ with .Site.Params.vision.headline }}{{ . }}{{ end }}</h2>
-                <div class="col-lg-8 col-md-4  col-xs-12 col-lg-offset-0 col-md-offset-2 ">
+                <div class="col-lg-8 col-md-8  col-xs-12 col-lg-offset-0 col-md-offset-0 ">
                     <p class="text-faded">{{ with .Site.Params.vision.description }}{{ . }}{{ end }}</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-8 col-lg-offset-0 col-md-offset-0 col-xs-offset-2" >
-                    <img class="fit-to-width shadow"  src="../img/vision.jpg"></img>
+                    <div class="blur">
+                        <img class="fit-to-width shadow"  src="../img/vision.jpg"></img>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-8 col-xs-8 col-lg-offset-2 col-xs-offset-2 text-center">

@@ -9,7 +9,9 @@
                     <div class="col-lg-4 col-xs-6 no-padding">
                         <div class="news-box text-muted">
                         <a href="{{ .Permalink }}" class="portfolio-box portfolio-link">
-                        <img src="../img/news/{{ .Params.image }}" class="img-responsive" alt="">
+                        <div class="fit-to-width blur">
+                            <img src="../img/news/{{ .Params.image }}" class="img-responsive" alt="">
+                        </div>
                         <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -21,8 +23,10 @@
                                 </div>
                         </div>
                         </a>
-                        <p class="small">{{ .Date.Format "Jan 2, 2006" }}</p>
-                        <p>{{ .Title }}</p>
+                        <div class="text-box">
+                            <p class="small text-primary">{{ .Date.Format "Jan 2, 2006" }}</p>
+                            <p>{{ .Title }}</p>
+                        </div>
                         </div>
                         <br>
                         <br>

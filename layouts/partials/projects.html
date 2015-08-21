@@ -6,9 +6,12 @@
                 <p class="text-muted text-center">{{ with .Site.Params.projects.description }}{{ . }}{{ end }}</p>
 
     {{ range where .Data.Pages "Section" "jp-projects" }}
-        <div class="col-lg-4 col-xs-6 project-box no-padding">
+        <div class="col-lg-6 col-md-6 col-xs-12 no-padding">
+            <div class="project-box">
             <a href="{{ .Permalink }}" class="portfolio-box portfolio-link">
-            <img src="../img/projects/{{ .Params.image }}" class="img-responsive fit-to-width" alt="">
+            <div class="blur">
+                <img src="../img/projects/{{ .Params.image }}" class="img-responsive fit-to-width" alt="">
+            </div>
             <div class="portfolio-box-caption">
                     <div class="portfolio-box-caption-content">
                         <div class="project-category text-faded">
@@ -20,6 +23,7 @@
                     </div>
             </div>
             </a>
+            </div>
         </div>
         {{ end }}
 
